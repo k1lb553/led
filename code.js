@@ -2,8 +2,8 @@ var data = ["255,255,255","255","255","255,255,255","255","255","255,255,255","2
 var size=300;
 var radius=8;
 if(window.innerWidth < 1000) {
-        size=750;
-        radius=20;
+        size=690;
+        radius=18.4;
     }
 else{
         size=300;
@@ -100,4 +100,3 @@ function kelvin_3(){
     data[8] = value;
     window.location.href="index.html#"+data;
 }
-
