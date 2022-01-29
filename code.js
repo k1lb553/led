@@ -1,4 +1,4 @@
-var data = ["255,255,255","100","5500","255,255,255","100","5500","255,255,255","100","5500"];
+
 window.location.href="index.html#"+data
 var colorPicker = new iro.ColorPicker('#picker1', {
     borderWidth: 1,
