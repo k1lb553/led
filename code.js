@@ -44,7 +44,7 @@ var colorPicker = new iro.ColorPicker('#picker3', {
 });
 
 colorPicker.on(['color:init', 'input:end'], function(color) {
-    data[5] = color.red+","+color.green+","+color.blue;
+    data[6] = color.red+","+color.green+","+color.blue;
     window.location.href="index.html#"+data;
     });
 
@@ -74,12 +74,12 @@ function kelvin_2(){
 
 function brightness_3(){
     var value = document.getElementById("brightness_3").value;
-    data[6] = value;
+    data[7] = value;
     window.location.href="index.html#"+data;
 }
 
 function kelvin_3(){
     var value = document.getElementById("kelvin_3").value;
-    data[7] = value;
+    data[8] = value;
     window.location.href="index.html#"+data;
 }
