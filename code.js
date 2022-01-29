@@ -100,3 +100,4 @@ function kelvin_3(){
     data[8] = value;
     window.location.href="index.html#"+data;
 }
+
