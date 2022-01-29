@@ -1,6 +1,15 @@
 var data = ["255,255,255","255","255","255,255,255","255","255","255,255,255","255","255"];
+var size=300;
+if(window.innerWidth < 1000) {
+        var size=750;
+    }
+else{
+        var size=300;
+    }
+
 window.location.href="index.html#"+data
 var colorPicker = new iro.ColorPicker('#picker1', {
+    width: size,
     borderWidth: 1,
     borderColor: "#fff",
     layout: [
@@ -17,6 +26,7 @@ colorPicker.on(['color:init', 'input:end'], function(color) {
 
 
 var colorPicker = new iro.ColorPicker('#picker2', {
+    width: size,
     borderWidth: 1,
     borderColor: "#fff",
     layout: [
@@ -33,6 +43,7 @@ colorPicker.on(['color:init', 'input:end'], function(color) {
     });
 
 var colorPicker = new iro.ColorPicker('#picker3', {
+    width: size,
     borderWidth: 1,
     borderColor: "#fff",
     layout: [
