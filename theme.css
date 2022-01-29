@@ -122,8 +122,8 @@ p {
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         background: white;
-        width: 36.8px;
-        height: 36.8px;
+        width: 59.8px;
+        height: 59.8px;
         cursor: pointer;
         border-radius: 46px;
         border: 5.75px solid black;
