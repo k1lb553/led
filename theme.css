@@ -18,15 +18,34 @@ p {
     color: whitesmoke;
 }
 
-.main_div{
+.wrapper-div {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.elements {
+    height: 585px;
+    width: 380px;
+    float: left;
+}
+
+.elements-content {
     margin: 10px 10px 10px 10px;
-    display:inline-block;
     padding: 20px;
     border-radius: 10px;
     background-color: #2c2c2c;
 }
 
-.brightness_div{
+.curtain-div{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.brightness-div{
     margin-bottom: 10px;
     box-sizing: border-box;
     width: 300px;
@@ -36,7 +55,7 @@ p {
     background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
 }
 
-.kelvin_div{
+.kelvin-div{
     box-sizing: border-box;
     width: 300px;
     height: 40px;
@@ -63,6 +82,21 @@ p {
     border: 2.5px solid black;
 }
 
+#text {
+    text-align: center;
+}
+@media only screen and (max-width: 1550px) {
+    .wrapper-div {
+        width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .wrapper-div {
+        width: 765px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     body {
         padding: 0px;
@@ -73,8 +107,8 @@ p {
     }
     
     h2 {
-        font-size: 55.2px;
         text-align: center ;
+        font-size: 55.2px;
     }
     
     p {
@@ -84,15 +118,34 @@ p {
         color: whitesmoke;
     }
     
-    .main_div{
+    .wrapper-div {
+        width: 880px;
+        overflow: hidden;
+    }
+    
+    .elements {
+        height: 1345.5px;
+        width: 874px;
+        float: left;
+    }
+    
+    .elements-content {
         margin: 23px 23px 23px 23px;
-        display:inline-block;
         padding: 46px;
         border-radius: 23px;
         background-color: #2c2c2c;
     }
     
-    .brightness_div{
+    .curtain-div{
+        margin-bottom: 23px;
+        box-sizing: border-box;
+        width: 690px;
+        height: 92px;
+        border-radius: 46px;
+        border: 2.3px solid white;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    }
+    .brightness-div{
         margin-bottom: 23px;
         box-sizing: border-box;
         width: 690px;
@@ -102,7 +155,7 @@ p {
         background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
     }
     
-    .kelvin_div{
+    .kelvin-div{
         box-sizing: border-box;
         width: 690px;
         height: 92px;
@@ -122,9 +175,14 @@ p {
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         background: white;
-        width: 59.8px;
-        height: 59.8px;
+        width: 36.8px;
+        height: 36.8px;
         cursor: pointer;
         border-radius: 46px;
         border: 5.75px solid black;
-    }}
+    }
+    
+    #text {
+        text-align: center;
+    }
+}
