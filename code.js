@@ -1,4 +1,4 @@
-
+var data = ["","255,255,255","255","255","255,255,255","255","255","255,255,255","255","255","0","255","255","*"];
 var size=300;
 var radius=8;
 if(window.innerWidth < 1000) {
@@ -10,6 +10,16 @@ else{
         radius=8;
     }
     
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var element = document.getElementById('text');
+if (isMobile) {
+    element.innerHTML = "You are using Mobile";
+} else {
+    element.innerHTML = "You are using Desktop";
+}
+    
+window.location.href=data
+
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 var element = document.getElementById('text');
 if (isMobile) {
