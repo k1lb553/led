@@ -20,14 +20,6 @@ if (isMobile) {
     
 window.location.href=data
 
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-var element = document.getElementById('text');
-if (isMobile) {
-    element.innerHTML = "You are using Mobile";
-} else {
-    element.innerHTML = "You are using Desktop";
-}
-    
 var colorPicker = new iro.ColorPicker('#picker1', {
     width: size,
     handleRadius: radius,
